@@ -1,0 +1,129 @@
+ @media (min-width: 768px){
+    .latest-form{
+        width: 600px;
+    }
+    .blog-card {
+        width: 330px !important;
+    }
+    
+    .blog-card img {
+        width: 300px !important;
+    }
+    .blog-content {
+        padding: 15px !important;
+    }
+ }
+ 
+ 
+ 
+ 
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.Direct-para{
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    font-weight: 600;
+    margin: 20px;
+}
+.latest-form{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.blog-container {
+    display: flex;
+    flex-wrap:  wrap;
+gap: 40px;
+    justify-content: center;
+}
+.blog-content {
+    padding: 10px;
+}
+.meta-info {
+    display: flex;
+    gap: 40px;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+}
+.card-heading{
+    font-size: 22px;
+    color: #333;
+    font-family: sans-serif;
+margin: 20px 0;
+}
+
+.read-more {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    color: rgb(224, 11, 11);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+.blog-card:hover .read-more{
+    color: rgb(158, 46, 46);
+}
+.left-icon{
+    transform: rotate(30deg);
+}
+.blog-card:hover .left-icon{
+    transition: transform 0.5s ease;
+}
+.blog-card:hover  .left-icon{
+    color: rgb(158, 46, 46);
+}
+
+.blog-card:hover .left-icon{
+    transform: rotate(90deg); 
+}
+.blog-card {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    /* width: 330px; */
+    width: 280px;
+    padding: 10px;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.blog-card img {
+    height: 200px;
+    width: 250px;
+    /* width: 300px; */
+    display: block;
+    z-index: 2; 
+    background-color: aqua;
+    position: relative;
+    margin: 0 auto;
+}
+
+.blog-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 130px; 
+    border-left: 1px solid red;; 
+    border-right: 1px solid red;;
+    border-top: 1px solid red;; 
+    border-bottom: 1px solid red;; 
+    z-index: 1;
+    box-sizing: border-box; 
+}
+.blog-card:hover .card-heading{
+    color: rgb(184, 54, 54);
+}
